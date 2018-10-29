@@ -2,24 +2,28 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Travels from "./Travels";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1 className="App-title">Yours travels</h1>
         </header>
+        <Travels
+          country="Barcelona"
+          distance="2000km"
+          destination="Spain"
+          photo="https://i.ytimg.com/vi/k6V6bSdj2VQ/maxresdefault.jpg"
+        />
+        <Travels
+          country="Rome"
+          distance="2500km"
+          destination="Italie"
+          photo="https://www.voyagetips.com/wp-content/uploads/2017/05/colisee-rome.jpg"
+        />
       </div>
     );
   }
